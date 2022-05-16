@@ -12,7 +12,7 @@
           #wineName="ngModel"
         />
        <div *ngIf="(wineName.dirty || message) && wineName.invalid " class="msgerror">
-        <div *ngIf="wineName.errors.required">
+        <div *ngIf="wineName.errors?.['required']">
             Wine Name is required
         </div>
       </div>
@@ -28,7 +28,7 @@
           #winePrice="ngModel"
         />
         <div *ngIf="(winePrice.dirty || message) && winePrice.invalid " class="msgerror">
-          <div *ngIf="winePrice.errors.required">
+          <div *ngIf="winePrice.errors?.['required']">
               Wine Price is required
           </div>
         </div>
@@ -44,7 +44,7 @@
           pattern="^http(s?)\://[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(/\S*)?$"
         />
         <div *ngIf="(wineImageUrl.dirty || message) && wineImageUrl.invalid " class="msgerror">
-          <div *ngIf="wineImageUrl.errors.required">
+          <div *ngIf="wineImageUrl.errors?.['required']">
               Wine Image URL is required
           </div>
           <div *ngIf="wineImageUrl.errors.pattern">
