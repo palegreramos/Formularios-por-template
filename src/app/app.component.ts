@@ -1,11 +1,5 @@
 import { Component } from '@angular/core';
-
-interface Wine {
-  name: string;
-  price: number;
-  imageUrl: string;
-  onSale: boolean;
-}
+import {Wine} from './wine';
 
 @Component({
   selector: 'my-app',
