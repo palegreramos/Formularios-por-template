@@ -16,7 +16,9 @@ export class AppComponent {
   public wine: Wine;
   public message: string = '';
 
-  constructor() {}
+  constructor() {
+    
+  }
 
   createWine(wineForm) {
     if (wineForm.invalid) {

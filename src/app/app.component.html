@@ -53,7 +53,7 @@
         </div>
       </div>
       <div class="wine-onSale">
-        <input type="checkbox" name="onSale" ngModel /><label>On Sale</label>
+        <input type="checkbox" name="onSale" ngModel #onSale="ngModel" [value]="onSale" /><label>On Sale</label>
       </div>
     </div>
     <div *ngIf="message" class="msgerror">{{message}}</div>
